@@ -1,3 +1,7 @@
+mongoose.connect("mongodb://localhost:27017/emed")
+
+mongoose.connect("mongodb+srv://brown-bug:1yRRJ3g5OLuJKwT2@emed.4zqn6.mongodb.net/?retryWrites=true&w=majority")
+
 {
     "url1":"http://localhost:8000/app/register"
 }
