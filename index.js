@@ -28,7 +28,7 @@ const carts=require("./routes/carts")
 const orders=require("./routes/orders")
 
 app.get("/",(req,res)=>{
-    res.send("<h1>This is testing api for e-com website.</h1>")
+    res.send({success:true,message:"<h1>This is testing api for e-com website.</h1>"})
 });
 
 app.use("/app",[reglogin,categories,brands,products,admins,vendors,users,vproducts,carts,orders])
