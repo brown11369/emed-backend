@@ -7,6 +7,19 @@ mongoose.connect("mongodb+srv://brown-bug:1yRRJ3g5OLuJKwT2@emed.4zqn6.mongodb.ne
 }
 
 {
+    "name":"lalit",
+    "email":"lalitpratapsingh2002@gmail.com",
+    "phone":"8279961179",
+    "password":"temple222",
+    "picture":"https://brownbug.in/picture/logo.png",
+    "user_role":"admin",
+    "role":"admin"
+}
+
+
+
+
+{
     "name":"barun kumar",
     "email":"barunk1357@gmail.com",
     "phone":"9870895374",

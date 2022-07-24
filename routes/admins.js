@@ -1,7 +1,9 @@
 const express=require("express")
 const admins=require("../models/adminModel")
+const deleteControllers=require("../controllers/deletecontroller")
 
 const router=express.Router();
+
 
 router.put("/admins/:id",(req,res)=>{
     let id=req.params.id;
@@ -19,18 +21,7 @@ router.put("/admins/:id",(req,res)=>{
     })
 })
 
-router.delete("/admins/:id",(req,res)=>{
-    let id=req.params.id;
-    
-    admins.deleteOne({"_id":id})
-    .then((data)=>{
-        res.send({success:true,message:"Your account has deleted"})
-    })
-    .catch((err)=>{
-        console.log(err);
-        res.send({success:false,message:"try again later"})
-    })
-})
+router.delete("/admins/:id",deleteControllers)
 
 router.get("/admins/:id",(req,res)=>{
     let id=req.params.id;
